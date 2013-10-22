@@ -25,6 +25,6 @@ Todos.TodosController = Ember.ArrayController.extend({
 
   inflection: function () {
     var remaining = this.get('remaining');
-    return remaining === 1 ? 'item' : 'items';
+    return remaining === 1 ? 'todo' : 'todos';
   }.property('remaining')
 });
